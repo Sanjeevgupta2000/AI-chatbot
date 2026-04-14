@@ -1,0 +1,9 @@
+langchain
+langchain-community
+langchain-core
+mistralai
+python-dotenv
+streamlit
+tiktoken
+pydantic
+langchain_huggingface
