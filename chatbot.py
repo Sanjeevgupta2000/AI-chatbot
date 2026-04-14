@@ -1,9 +1,12 @@
 from langchain_mistralai import ChatMistralAI
+import os
 from langchain_core.messages import AIMessage,SystemMessage,HumanMessage
 
 model = ChatMistralAI(
     model="ministral-8b-2512",temperature=0,
-    api_key="zzDVO6qrHgx5IWrgugpXcaBvCUvecxDc"   # correct key
+   
+    api_key = os.getenv("MISTRAL_API_KEY")
+     
 )
 message=[
     SystemMessage(content="You are funny AI agent")
